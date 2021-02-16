@@ -14,4 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package package/lienol' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages package/kenzo' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small package/small' feeds.conf.default
+sed -i '$a git clone https://github.com/coolsnowwolf/lede package/lean' feeds.conf.default
